@@ -67,7 +67,6 @@ void loop() {
         bColour[i] = changeBallColour(); // randomise the colour on jump
         
         killMe = random(100);
-        Serial.println("killMe = " + String(killMe));
         
        if (killMe > POP_PROBABILITY && currentNumBalls > 1) { // we always need a ball to generate another
         currentNumBalls--; // makes the last ball suddenly disappear, aka POP!
